@@ -1,5 +1,5 @@
-import validateUser from "./validate-user.js";
-import { promisify } from "util";
+const validateUser = require("./validate-user");
+const { promisify } = require("util");
 
 const validateUserAsync = promisify(validateUser);
 

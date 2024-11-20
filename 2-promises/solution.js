@@ -24,11 +24,12 @@ const id = yourRandomMethod() //third run
 7. log the resultant fullname, or the error, at the end
 */
 
-import lastnames from "./lastnames.js";
-import firstnames from "./firstnames.js";
+const lastnames = require("./lastnames.js");
+const firstnames = require("./firstnames.js");
 
 const generateRandomId = () => {
   const isValid = Math.random() > 0.5;
+
   if (isValid) {
     return Math.floor(Math.random() * 101);
   } else {
